@@ -2,20 +2,21 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Inconsolata', monospace;
-    font-family: 'Unbounded', cursive;
+    font-family: 'Barriecito', cursive;
+    font-family: 'Chivo Mono', monospace;
   }
 
 
 header {
     width: 100%;
     color:black;
-    background-color: lightblue;
+    background-color: orangered;
     padding: 30px;
     margin: 10px;
     text-align: center;
     font-size: 15px;
-    font-family: 'Unbounded', cursive;
+    font-family: 'Barriecito', cursive ;
+
 }
 
 h1{
@@ -29,7 +30,7 @@ body {
 }
 
 .menu {
-    width: 25%;
+    width: 100%;
     float: left;
     padding: 15px;
     border: 0px solid black;
@@ -39,33 +40,32 @@ body {
 
 .menu a{
     color:black;
-    font-family: 'Unbounded', cursive;
+    float: left;
+    display: block;
+    font-family: 'Chivo Mono', monospace;
     font-style: normal;
     text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 10px;
+    background-color: yellowgreen;
+    height: auto;
 }
 
 .menu ul {
     list-style-type: none;
-    font-style: italic;
     text-align: center;
     margin: 0;
     padding: 0;
   }   
-
-.menu li {
-    padding: 8px;
-    margin-bottom: 10px;
-    background-color: yellowgreen;
-    height: 3cm;
-    /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
-  }
   
-  .menu li:hover {
+  .menu a:hover {
     background-color: green;
   }
 
   .main {
-    width: 75%;
+    width: 100%;
     float: left;
     padding: 15px;
     border: 0px solid black;
@@ -73,7 +73,7 @@ body {
 
 h2 {
     color:black;
-    background-color: lightskyblue;
+    background-color: rgb(40, 126, 255);
     padding: 15px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -106,36 +106,6 @@ img {
 
 
 
-.lista {
-    font-family: 'Inconsolata', monospace;
-    font-size: large;
-    float: left;
-    width: 50%;
-}
-  
-  #habint:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-.progress {
-    height: 15px;
-    width: 50%;
-    border: 1px solid lightseagreen;
-    border-radius: 5px;
-    background-color: #e6f3fa;
-    margin-bottom: 15px;
-}
- 
-.progress-bar {
-    height: 100%;
-    background: lightseagreen;
-    display: flex;
-    align-items: center;
-    transition: width 0.25s;
-    border-radius: 5px;
-}
 
 a{
     font-family: 'Inconsolata', monospace;
@@ -204,7 +174,7 @@ button {
   
 /* RWD */
 @media (max-width: 600px) {
-    header, .menu, .main, footer, #lista1, #lista2{
+    header, .menu, .menu a, .main, footer{
       width: 100%;
       height: auto;
     }
