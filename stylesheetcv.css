@@ -2,8 +2,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Barriecito', cursive;
+
+
     font-family: 'Chivo Mono', monospace;
+
+    font-family: 'Staatliches', cursive;
   }
 
 
@@ -11,18 +14,23 @@ header {
     width: 100%;
     color:black;
     background-color: orangered;
-    padding: 30px;
-    margin: 10px;
-    text-align: center;
-    font-size: 15px;
-    font-family: 'Barriecito', cursive ;
-
+    padding: 130px;
+    text-align: center; 
+    font-family: 'Staatliches', cursive;
+  
 }
 
 h1{
     width: 100%;
     text-align: center;
+    font-size: 24px;
 }
+
+#titulo {
+ 
+  font-size: 60px;
+}
+
 
 body {
         
@@ -32,28 +40,26 @@ body {
 .menu {
     width: 100%;
     float: left;
-    padding: 15px;
-    border: 0px solid black;
     left: 0; 
-    margin-top: 30px; 
+ 
   }
 
 .menu a{
     color:black;
     float: left;
+    width: 20%;
     display: block;
     font-family: 'Chivo Mono', monospace;
     font-style: normal;
     text-decoration: none;
     text-align: center;
     padding: 10px;
-    margin-right: 20px;
-    margin-left: 10px;
     background-color: yellowgreen;
     height: auto;
 }
 
 .menu ul {
+   width: 100%;
     list-style-type: none;
     text-align: center;
     margin: 0;
@@ -61,7 +67,11 @@ body {
   }   
   
   .menu a:hover {
-    background-color: green;
+    background-color: rgb(227, 255, 11);
+  }
+
+  .img {
+    width: 100%
   }
 
   .main {
@@ -75,25 +85,32 @@ h2 {
     color:black;
     background-color: rgb(40, 126, 255);
     padding: 15px;
+    margin-right: -16px;
+    margin-left: -16px;
     margin-top: 30px;
     margin-bottom: 30px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    font-size: 35px;
+
+}
+
+h2:hover{
+  background-color: rgb(0, 222, 229)
 }
 
 h5  {
     font-size: large;
-    font-family: 'Inconsolata', monospace;
-}
+    font-family: 'Chivo Mono', monospace;}
 
 h6 {
     font-style:italic;
     font-size: medium;
-    font-family: 'Inconsolata', monospace;
-}
+    font-family: 'Chivo Mono', monospace;
+  }
 
 p {
-    font-family: 'Inconsolata', monospace;
-    font-size: large;
+  font-family: 'Chivo Mono', monospace;
+  
+  font-size: large;
 }
    
 img {
@@ -108,17 +125,15 @@ img {
 
 
 a{
-    font-family: 'Inconsolata', monospace;
-    color: lightseagreen;
+    font-family: 'Chivo Mono', monospace;
+    color: rgb(40, 126, 255);
 } 
 
 a:hover{
     color: black;
 }
 
-i:hover {
-    color: lightseagreen
-}
+
 
   footer {
     width: 100%;
@@ -128,7 +143,7 @@ i:hover {
     text-align: center;
     color: white;
     float: left;
-    font-family: 'Unbounded', cursive;
+    font-family: 'Chivo Mono', monospace;
   }
 
   footer:hover {
@@ -138,8 +153,8 @@ i:hover {
 /*botones*/
 
 button {
-    font-size: 15px;  
-    font-family: 'Unbounded', cursive;
+    font-size: 30px;  
+    font-family: 'Chivo Mono', monospace;
     border: none;
     outline: none;
     cursor: pointer;
@@ -165,20 +180,20 @@ button {
     color: white;
   }
   
-  #tothetop:hover, #lightdark:hover {
-    background-color: lightblue;
-  }
-
 
 
   
 /* RWD */
 @media (max-width: 600px) {
-    header, .menu, .menu a, .main, footer{
+   header, .menu, .menu a, .main, footer{
       width: 100%;
       height: auto;
+      }
+    
+    h1{
+        text-align: left;
+       } 
+   
+    
     }
-       h1{
-     text-align: left;
-    } 
-}
+      
