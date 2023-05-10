@@ -12,11 +12,13 @@
 
 header {
     width: 100%;
-    color:black;
     background-color: orangered;
-    padding: 130px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center; 
-    font-family: 'Staatliches', cursive;
+
   
 }
 
@@ -70,7 +72,11 @@ body {
     background-color: rgb(227, 255, 11);
   }
 
-  .img {
+ 
+  .puente {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%
   }
 
@@ -96,10 +102,27 @@ h2 {
 h2:hover{
   background-color: rgb(0, 222, 229)
 }
+h3  {
+
+  font-style:italic;
+  font-size: 30px;
+  font-family: 'Chivo Mono', monospace;
+}
+
+#quehacemosin {
+  text-align: center;
+  margin-right: 160px;
+  margin-left: 160px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+  
 
 h5  {
-    font-size: large;
-    font-family: 'Chivo Mono', monospace;}
+    font-size: 30px;
+    font-family: 'Staatliches', cursive;
+    font-style:italic;
+  }
 
 h6 {
     font-style:italic;
@@ -153,7 +176,7 @@ a:hover{
 /*botones*/
 
 button {
-    font-size: 30px;  
+    font-size: 20px;  
     font-family: 'Chivo Mono', monospace;
     border: none;
     outline: none;
@@ -190,10 +213,14 @@ button {
       height: auto;
       }
     
-    h1{
-        text-align: left;
-       } 
+  
    
     
     }
       
+    @media (max-width: 600px) {
+      .menu a:hover {
+        background-color: yellowgreen;
+
+      }
+        }
