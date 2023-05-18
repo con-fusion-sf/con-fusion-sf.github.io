@@ -36,7 +36,7 @@ h1{
 
 body {
         
-        background-color: lightgray;
+        background-color: white;
 }
 
 .menu {
@@ -73,7 +73,7 @@ body {
   }
 
  
-  .puente {
+  .fotos {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -89,7 +89,7 @@ body {
 
 h2 {
     color:black;
-    background-color: rgb(40, 126, 255);
+    background-color: rgb(227, 255, 11);
     padding: 15px;
     margin-right: -16px;
     margin-left: -16px;
